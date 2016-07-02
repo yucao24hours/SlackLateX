@@ -1,0 +1,19 @@
+{
+  "name": "slack-latex",
+  "version": "1.0.0",
+  "description": "Bot to convert LateX code in messages into",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucao24hours/SlackLateX.git"
+  },
+  "author": "Sandeep Vijayasekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yucao24hours/SlackLateX/issues"
+  },
+  "homepage": "https://github.com/yucao24hours/SlackLateX#readme"
+}
