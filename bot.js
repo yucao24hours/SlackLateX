@@ -6,14 +6,16 @@ var ws;
 var message="";
 var i = 0;
 var latex = {};
-var fs = require('fs');
-fs.readFile('secret.txt','utf8',function (err, data) {
-    global.token=data;
-    global.token = global.token.replace(/[\n\r]/g,"");
-    getWebSocket();
-});
 
-//gets the websocket url 
+if(!process.env.SLACK_API_TOKEN) {
+  console.log('SLACK_API_TOKEN is not set');
+  process.exit(1);
+}
+
+global.token = process.env.SLACK_API_TOKEN;
+getWebSocket();
+
+//gets the websocket url
 function getWebSocket(){
     request('https://slack.com/api/rtm.start?token='+global.token+'&pretty=1', function (error, response, body) {
          //console.log(response.url);
