@@ -12,7 +12,7 @@ Install required modules with:
 $ npm install
 ```
 
-Create a secret.txt file in the bot directory and put your slack token in it
+Set your Slack token as `SLACK_API_TOKEN` environment variable.
 
 Start bot by running `node bot.js` or `nodejs bot.js`
 
